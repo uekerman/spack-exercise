@@ -26,7 +26,7 @@ include_directories(${YAML_CPP_INCLUDE_DIR})
 
 add_executable(spackexample main.cpp)
 target_link_libraries(spackexample spackexamplelib)
-target_link_libraries(spackexamplelib Boost::filesystem ${YAML_CPP_LIBRARIES})
+target_link_libraries(spackexamplelib Boost::filesystem yaml-cpp)
 
 target_include_directories(spackexamplelib
     PRIVATE
